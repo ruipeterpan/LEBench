@@ -155,7 +155,7 @@ if __name__ == '__main__':
     # For running LEBench on one specified kernel version.
     if len(sys.argv) > 1:
         kern_version = sys.argv[1]
-        print("[INFO] Configuring to boot into " + kern_version + "."
+        print("[INFO] Configuring to boot into " + kern_version + ".")
         generate_grub_file(WORKING_DIR + 'template/grub', kern_version)
         install_grub_file()
         sys.exit(0)
